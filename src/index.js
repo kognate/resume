@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Resume from './Resume';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <Resume />,
   document.getElementById('root')
 );

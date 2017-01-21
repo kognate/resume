@@ -1,0 +1,21 @@
+.Address .name {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+
+.Address {
+  border: 1px solid black;
+}
+
+.Address div.street {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+
+.Address div.city.state.zip {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}

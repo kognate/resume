@@ -1,0 +1,21 @@
+.Resume-header .Resume-contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Resume-header .Resume-contact .Resume-email {
+  font-family: monospace;
+  font-weight: normal;
+  width: 60%;
+}
+
+.Resume-header .Resume-contact .Resume-email {
+  font-family: monospace;
+  font-weight: normal;
+  width: 20%;
+}
+
+.Resume-header {
+  margin: 1rem;
+}

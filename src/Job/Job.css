@@ -1,0 +1,21 @@
+.Job-header {
+  display: flex;
+  flex-direction: row;
+  background-color: darkgrey;
+  color: white;
+}
+
+.Job-employerName, .Job-employmentDates {
+  padding: 1rem;
+  font-size: xx-large;
+}
+
+.Job-employerName {
+  width: 80%;
+  margin-left: 5rem;
+}
+
+.Job-employmentDates {
+  text-align: right;
+  width: 20%;
+}
