@@ -1,4 +1,4 @@
-.Job-header {
+.Job-Header {
   display: flex;
   flex-direction: row;
   background-color: darkgrey;
@@ -6,16 +6,98 @@
 }
 
 .Job-employerName, .Job-employmentDates {
-  padding: 1rem;
   font-size: xx-large;
+  transition: font-size 2s;
+}
+
+.Job-employmentDates {
+  margin-right: 1rem;
 }
 
 .Job-employerName {
-  width: 80%;
+  width: 50%;
   margin-left: 5rem;
 }
 
 .Job-employmentDates {
   text-align: right;
-  width: 20%;
+  width: 50%;
+}
+
+.Job-title {
+  font-size: x-large;
+  margin: 1rem;
+}
+
+.Job-summary {
+  margin: 1rem;
+  padding-top: 1rem;
+  border-top: 2px dotted black;
+}
+
+.Job-skill-bulletpoints {
+  transition: width 2s;
+  border: 1px dotted black;
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0px;
+  width: 30vw;
+}
+
+.Job-skill-bulletpoints li {
+  padding-left: 1rem;
+  padding: 1rem;
+}
+
+.Job-skill-bulletpoints li:nth-child(odd) {
+  background-color: lightgrey;
+  padding-left: 1rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .Job-Header {
+    flex-direction: column;
+  }
+
+  .Job-employerName, .Job-employmentDates {
+    padding: 0.25rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .Job-employerName {
+    margin-left: 0rem;
+  }
+
+  .Job-title {
+    font-size: x-large;
+    margin: 0.25rem;
+    text-align: center;
+  }
+
+  .Job-skill-bulletpoints {
+    width: 90vw;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Job-Header {
+    flex-direction: column;
+  }
+
+  .Job-employerName, .Job-employmentDates {
+    padding: 0.25rem;
+    text-align: left;
+    font-size: large;
+    margin-left: 0.25rem;
+  }
+
+  .Job-title {
+    font-size: x-large;
+    margin: 0.25rem;
+    text-align: left;
+  }
 }

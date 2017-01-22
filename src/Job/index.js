@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import styles from "./Job.css"
+import "./Job.css";
 
 class Job extends Component {
   render() {
     return (<div>
-      <div><pre>{JSON.stringify(styles.Job)}</pre></div>
-      <div id="jobheader" className={styles.JobHeader}>
+      <div id="jobheader" className="Job-Header">
       <div className="Job-employerName">{this.props.job.employer.name}</div>
       <div className="Job-employmentDates">
       <span className="Job-start_date">{this.props.job.start_date}</span> to&nbsp;
@@ -17,9 +16,9 @@ class Job extends Component {
     <div className='Job-body'>
       <div className="Job-title">{this.props.job.title}</div>
       <div className='Job-summary'>{this.props.job.summary}</div>
-      <ol>
+      <ul className='Job-skill-bulletpoints'>
         {this.props.job.bulletpoints.map((item) => <li key={item}>{item}</li>)}
-      </ol>
+      </ul>
     </div>
   </div>);
   }
